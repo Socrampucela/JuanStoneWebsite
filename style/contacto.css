@@ -2,7 +2,7 @@
     cursor: url(../cursors/cursor_general.cur),auto;
 }
 body{
-    background-color: #d1d1d1;
+    background: rgb(231, 230, 230);
 }
 html,body{
     margin:0;
@@ -10,42 +10,33 @@ html,body{
     height:100%;
     overflow:hidden;
 }
-#contenedor-volver{
-    top: 50%;
-    left: -20px; 
-    
-    transform: translateY(-50%); 
-    border: 3px solid #ABA8AB;
-    border-left: transparent;
-    border-radius: 999px;
-    width: 30%;
-    height: 10%;
-    margin-top: 35%;
-        
-    overflow: visible; 
-}
-
-#volver{
-    position: absolute;
-    
-    transform: translateY(-50%); 
-    background-color: #A0ABAD;
-    border: 2px solid #73B5CC;
-    border-radius: 999px;
-    width: calc(85% + 20px); 
-    height: 80%;
-    text-align: center;
-    font-size: 40px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 a{
     color: black;
     text-decoration: none;
+    z-index: 10;
 }
 a:hover,button:hover{
     cursor: url(../cursors/cursor_links.cur),auto;
+}
+.boton-volver{
+    border: 2px solid rgb(0,191,237);
+    border-radius: 100px;
+    margin-top:10%;
+    opacity: 1;
+    width: 8%;
+    height:5vh;
+    background-color: rgb(226, 233, 241);
+    transition: transform 0.2s ease-out;
+}
+#reflejo{
+    background-color: rgb(255, 255, 255); 
+    border-radius: 100px; 
+    width:70%;
+    margin-left:12%;
+    height:1.5vh;
+    filter: blur(2px); 
+    opacity: 1;
+}
+.boton-volver:hover{
+    transform: scale(1.1);
 }
