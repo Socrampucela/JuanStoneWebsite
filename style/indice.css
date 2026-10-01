@@ -59,11 +59,13 @@ body {
     border-radius: 8%;
     overflow: hidden;
     box-sizing: border-box;
+    transition: transform 0.2s ease;
 }
 
 .canal-Wii:hover {
     border: 1px solid rgb(59, 179, 238);
     box-shadow: 0 0 6px rgba(59, 179, 238, 0.8);
+    transform:translateY(-15px)  ;
 }
 
 .imagen-canal {
@@ -75,12 +77,10 @@ body {
 
 video {
     position: absolute;
-    left: -2.5%;
-    bottom: -13%;
+    left: -3%;
+    bottom: -7%;
     width: 25vw;
-    max-width: 450px;
-    min-width: 300px;
-    height: 28vw;
+    height: 22vw;
     z-index: 10;
 }
 
@@ -131,8 +131,6 @@ video {
 
     width: 12vw;
     height: 12vw;
-    max-width: 180px;
-    max-height: 180px;
 
     background-color: transparent;
     color: transparent;
@@ -201,8 +199,7 @@ button:hover {
     position: absolute;
     left: -4%;
     bottom: -6.5%;
-    max-width: 650px;
-    min-width: 400px;
+
     height: auto;
     z-index: 10;
     }
@@ -214,20 +211,27 @@ button:hover {
     }
 }
 
-@media (min-height:1400px) {
+@media (min-height:3400px) {
     video {
     left: -7.5%;
-    bottom: -20%;
+    bottom: -4%;
     width:40vh;
-    height:69.5%;
-    }
-    #icono-vacio{
-        left:2%;
-        bottom:5%;
-        width: 15vh;
-        height: 20vh;
+    height:40vh;
     }
     #boton-contacto {
         right: 4vw;
+        bottom:8%;
+        background-color: transparent;
+        width:15vh;
+        height:17vh;
     }
+    #nombre{
+        width: 15vh;
+        font-size: 150px;
+        left:48%;
+    }
+    #reloj{
+        font-size: 150px;
+    }
+
 }
